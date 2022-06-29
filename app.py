@@ -4,7 +4,7 @@ from config import DEBUG, HOST, MESSAGE, PORT
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
+def index():
     return MESSAGE
 
 if __name__ == "__main__":
