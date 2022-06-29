@@ -1,11 +1,11 @@
 from flask import Flask
-from config import DEBUG, HOST, PORT
+from config import DEBUG, HOST, MESSAGE, PORT
 
 app = Flask(__name__)
 
-@app.route("/hello")
+@app.route("/")
 def hello():
-    return "Hello World"
+    return MESSAGE
 
 if __name__ == "__main__":
     app.run(debug=DEBUG, host=HOST, port=PORT)
